@@ -12,3 +12,7 @@ Teste de concorrencia, instanciando algumas tasks/threads para realizar opera√ß√
  - C# 8.0.204
  - EFCORE : 7.0.0
  - SQL SEVER : 2022
+
+
+![image](https://github.com/lulumeisterr/multithread-concurrency-ef-core/assets/25963928/93fa6021-8510-489d-863d-840180778421)
+
