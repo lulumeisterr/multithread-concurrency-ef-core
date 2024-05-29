@@ -9,10 +9,6 @@ Importante.
   por padrão o beginTransaction ja executa o (READ COMMITTED). Isso ainda garante que as linhas lidas permaneçam consistentes até o final da transação, 
   mesmo que outras transações estejam ocorrendo simultaneamente sem a necessidade também de usar o updlock
   
-# UPDLOCK
-  realiza bloqueio de atualização nas linhas afetadas pela instrução, o que impede que outras transações modifiquem 
-  ou insiram novos dados nessas linhas até que a transação atual seja concluída.
-
 #Tecnologias
  - C# 8.0.204
  - EFCORE : 7.0.0
