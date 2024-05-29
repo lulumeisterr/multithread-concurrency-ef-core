@@ -46,7 +46,7 @@ async Task UpdateOrCreateDataAsync(string connection, Negocio negocioRequest) {
         Console.WriteLine("");
         Console.WriteLine("Buscando dados...");
         Negocio? dbNegocio = await context.Negocios
-                           .FromSqlInterpolated($"SELECT * FROM Negocio WITH(UPDLOCK) WHERE NUMERO_NEGOCIO = 1") //coloca um tipo específico de bloqueio nas linhas afetadas pela instrução.
+                           .FromSqlInterpolated($"SELECT * FROM Negocio WHERE NUMERO_NEGOCIO = 1") //coloca um tipo específico de bloqueio nas linhas afetadas pela instrução.
                            .AsNoTracking()
                            .FirstOrDefaultAsync();
         if (dbNegocio == null)
